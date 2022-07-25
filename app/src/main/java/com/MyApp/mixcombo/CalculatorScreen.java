@@ -3,20 +3,16 @@ package com.MyApp.mixcombo;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import org.mozilla.javascript.Context;
-import org.mozilla.javascript.Scriptable;
 
 import android.os.Handler;
-import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;
 import javax.script.ScriptException;
 
-public class MainActivity extends AppCompatActivity{
+public class CalculatorScreen extends AppCompatActivity{
     TextView view,res;
     String work="";
     Double result=null;
@@ -24,7 +20,7 @@ public class MainActivity extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.calculator_screen);
         view=(TextView) findViewById(R.id.view);
         res=(TextView) findViewById(R.id.result);
         final Handler handler=new Handler();
